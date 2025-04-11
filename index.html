@@ -3,45 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ISRO-API</title>
+  <title>ISRO 🚀 API - Indian Space Research Organization</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <div class="content">
-      <h1 class="container__content__heading">ISRO 🚀 API</h1>
-      <p class="container__content__para">
-        Open Source API for Launched Spacecrafts & Rockets data of ISRO
-      </p>
-      <h2 class="container__content__h2">API End-Points</h2>
-      <ul>
-        <li>
-          Spacecrafts:
-          <img src="data/space_indian.png" alt="PSLV-C49">
-          <a href="/api/spacecrafts" target="_blank" rel="noopener noreferrer">/api/spacecrafts</a>
-        </li>
-        <li>
-          Launchers:
-          <img src="https://www.thestatesman.com/wp-content/uploads/2019/07/CHANDRAYAAN-2-1.jpg" alt="CHANDRAYAAN-2">
-          <a href="/api/launchers" target="_blank" rel="noopener noreferrer">/api/launchers</a>
-        </li>
-        <li>
-          Customer Satellites:
-          <img src="https://static.toiimg.com/photo/msid-70609128/70609128.jpg" alt="Customer">
-          <a href="/api/customer_satellites" target="_blank" rel="noopener noreferrer">/api/customer_satellites</a>
-        </li>
-        <li>
-          Centres:
-          <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2020/06/isro-gslv-20181114-1593399635.jpg" alt="centers" />
-          <a href="/api/centres" target="_blank" rel="noopener noreferrer">/api/centres</a>
-        </li>
-      </ul>
-      <hr>
-      <h3 class="center-text">Contribute at <a href="https://github.com/isro/api">GitHub</a></h3>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="header-title">ISRO 🚀 API</h1>
+      <p class="header-subtitle">Open Source API for Indian Space Research Organization</p>
     </div>
-  </div>
+  </header>
+
+  <main class="main-content">
+    <section class="api-section">
+      <h2 class="section-title">API Endpoints</h2>
+      <div class="api-grid">
+        <div class="api-card">
+          <div class="card-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="card-content">
+            <h3>Spacecrafts</h3>
+            <p>Access detailed information about ISRO's spacecraft missions</p>
+            <a href="/api/spacecrafts" class="api-link" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-arrow-right"></i> View API
+            </a>
+          </div>
+        </div>
+
+        <div class="api-card">
+          <div class="card-icon">
+            <i class="fas fa-space-shuttle"></i>
+          </div>
+          <div class="card-content">
+            <h3>Launchers</h3>
+            <p>Explore ISRO's launch vehicle data and specifications</p>
+            <a href="/api/launchers" class="api-link" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-arrow-right"></i> View API
+            </a>
+          </div>
+        </div>
+
+        <div class="api-card">
+          <div class="card-icon">
+            <i class="fas fa-satellite"></i>
+          </div>
+          <div class="card-content">
+            <h3>Customer Satellites</h3>
+            <p>Information about satellites launched for other countries</p>
+            <a href="/api/customer_satellites" class="api-link" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-arrow-right"></i> View API
+            </a>
+          </div>
+        </div>
+
+        <div class="api-card">
+          <div class="card-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="card-content">
+            <h3>Centres</h3>
+            <p>Details about ISRO's research and development centers</p>
+            <a href="/api/centres" class="api-link" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-arrow-right"></i> View API
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <h2 class="section-title">Quick Stats</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fas fa-rocket"></i>
+          <h3>100+</h3>
+          <p>Spacecrafts Launched</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-globe-asia"></i>
+          <h3>30+</h3>
+          <p>Countries Served</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-satellite-dish"></i>
+          <h3>50+</h3>
+          <p>Customer Satellites</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contribute-section">
+        <div class="space-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3>Launch Your Contribution</h3>
+        <p>Join India's space technology revolution</p>
+        <a href="https://github.com/isro/api" class="contribute-button" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> Contribute on GitHub
+        </a>
+      </div>
+      
+      <div class="social-section">
+        <div class="space-icon">
+          <i class="fas fa-satellite"></i>
+        </div>
+        <h3>Stay Connected</h3>
+        <div class="social-links">
+          <a href="https://x.com/isro" class="social-link x-link" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+            <img src="data/x-icon.svg" alt="X" class="x-icon">
+            <span>Follow @isro</span>
+          </a>
+          <a href="https://www.isro.gov.in/" class="social-link website-link" aria-label="ISRO Website" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-globe"></i>
+            <span>Visit ISRO Website</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-stars"></div>
+  </footer>
 </body>
 </html>
